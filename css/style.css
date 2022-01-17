@@ -1,0 +1,34 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Georgia, serif;
+}
+
+
+header{
+   height: 90px;
+   width: 100vw;
+   background-color: darkred;
+   line-height: 90px;
+}
+
+header h1{
+   width: 30%;
+   margin: 0 auto;
+}
+
+main{
+   display: flex;
+   padding: 10% 20%;
+}
+
+.film-container{
+   border: 1px solid black;
+   margin: 0 10px;
+   width: calc(100% / 5);
+}
+
+.title{
+   text-align: center;
+}
