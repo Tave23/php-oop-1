@@ -12,6 +12,7 @@
          $this->regista = $_regista;
       }
 
+      // funzione per accorciare il riassunto a 80 caratteri
       public function getExceptedSummary($length = 80) {
          return substr($this->riassunto, 0, $length) . "...";
       }
