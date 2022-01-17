@@ -34,7 +34,7 @@
          "cast" => ["Gassmann, Lollobrigida, Loren, Troisi, Proietti, Mastroianni"],
          "regista" => "Matteo Garrone",
          "riassunto" => "Nunc tincidunt porttitor leo. Mauris pulvinar eleifend diam eget pellentesque. Ut in lacus ut odio fermentum tincidunt et id ligula. Etiam aliquam venenatis laoreet. Quisque accumsan augue id dolor fermentum, a dignissim orci aliquet. Nam vitae ex ac purus eleifend sodales. Donec nec mi et eros cursus aliquet. Mauris tortor elit, mollis id dignissim id, vestibulum nec nisl. Mauris sollicitudin sollicitudin massa sed tempor. ",
-         "anno_di_uscita" => 1963,
+         "anno_di_uscita" => 1964,
       ],
    ];
 
