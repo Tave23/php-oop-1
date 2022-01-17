@@ -21,14 +21,23 @@ header h1{
 main{
    display: flex;
    padding: 10% 20%;
+   height: calc(100vh - 90px);
 }
 
 .film-container{
    border: 1px solid black;
    margin: 0 10px;
    width: calc(100% / 5);
+   overflow-y: scroll;
 }
 
 .title{
    text-align: center;
+   height: 15%;
 }
+
+h4, ul, p{
+   padding: 5px;
+}
+
+

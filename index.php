@@ -34,23 +34,46 @@ metodi d’istanza che abbiamo visto stamattina e create un file `index.php` in 
    <main>
 
       <?php foreach ($movies as $movie) : 
-         $new_movie = new Movie($movie['nome']);
-         $new_movie->cast = $movie['cast'];
-         $new_movie->regista = $movie['regsita'];
+         $new_movie = new Movie($movie['nome'], $movie['cast'], $movie['regista']);
          $new_movie->riassunto = $movie['riassunto'];
          $new_movie->anno_di_uscita = $movie['anno_di_uscita'];
       ?>
       <div class="film-container">
          
+         <!-- titolo film -->
          <h3 class="title">
-            <?php echo $new_movie ->nome; ?>
+            <?php echo $new_movie->nome; ?>
          </h3>
 
-         <ul>
-            
+
+         <!-- lista attori film -->
+         <h4>Cast:</h4>
+
+         <ul style="list-style-type:none;">
+            <?php foreach ($movie['cast'] as $actor) : ?>
+            <li>
+               <?php echo $actor ?>
+            </li>
+            <?php endforeach ?>
          </ul>
 
+         <!-- nome regista film-->
+         <p>
+            Regista: 
+            <p><strong>
+               <?php echo $new_movie->regista; ?>
+            </strong></p> 
+         </p>
 
+         <!-- anno di uscita -->
+         <h4>
+            Uscito nel <?php echo $new_movie->anno_di_uscita ?>
+         </h4>
+
+         <!-- riassunto film -->
+         <h4>Riassunto:</h4>
+
+         <p><?php echo $new_movie->getExceptedSummary(80); ?></p>
 
       </div>
       <?php endforeach; ?> 

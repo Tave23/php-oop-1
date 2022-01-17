@@ -12,4 +12,7 @@
          $this->regista = $_regista;
       }
 
+      public function getExceptedSummary($length = 80) {
+         return substr($this->riassunto, 0, $length) . "...";
+      }
    }
